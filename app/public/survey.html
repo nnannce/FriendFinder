@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Friend Finder</title>
+  <!-- SCRIPTS AND LINKS -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+          
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-wrapper pink accent-2">
+        <a href="/" class="brand-logo" id="logo">Friend Finder</a>
+        <ul class="right hide-on-med-and-down" id="head-nav-links">
+          <li><a href="/api/friends">API Friends List</a></li>
+          <li><a href="https://github.com/nnannce/FriendFinder">GitHub Repo</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 z-depth-5 mainpanel">
+          <div id="mainpanel-content">
+            <h1>Survey Questions</h1>
+            <div class="divider"></div>
+
+            <h3>About You</h3>
+
+            <div class="input-field col s6">
+              <h5>Name (Required)</h5>
+             
+              <input type="text" class="validate" placeholder="Your Name Here" id="userName">
+            </div>
+
+            <div class="input-field col s6">
+              <h5>Link to your pic (Required)</h5>
+           
+              <input type="text" class="validate" placeholder="Photo Link Here" id="userPhoto">
+            </div>
+
+            <!--  QUESTIONS -->
+            <div class="input-field col s12">
+              <h3>Question 1</h3>
+              <h5>How much do you like to shop?</h5>
+              <select id="question1">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">It's OK, but I try to make it quick.</option>
+                <option value="2">I actually just live at the mall bc it's easier than making the commute</option>
+                <option value="3">As if! I let my mom pick out my clothes</option>
+                <option value="4">So much I have to leave my credit card at home.</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 2</h3>
+              <h5>What kind of music do you prefer?</h5>
+              <select id="question2">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Classical an/or show tunes</option>
+                <option value="2">Hip-hop/Rap</option>
+                <option value="3">Indie and alternative rock</option>
+                <option value="4">Pop</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 3</h3>
+              <h5>What do you watch on TV/Netflix the most?</h5>
+              <select id="question3">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Reality shows</option>
+                <option value="2">Classic movies</option>
+                <option value="3">Drama</option>
+                <option value="4">Cartoons</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 4</h3>
+              <h5>What would you rather drive?</h5>
+              <select id="question4">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">A jeep</option>
+                <option value="2">A locqued-out SUV</option>
+                <option value="3">Something luxury</option>
+                <option value="4">A hybrid</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 5</h3>
+              <h5>It's Monday. Which article of clothing is a must-wear</h5>
+              <select id="question5">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">A hat to make me look mysterious</option>
+                <option value="2">You can never go wrong with something plaid</option>
+                <option value="3">I don't care as long as it's comfortable</option>
+                <option value="4">Something black, yet chic</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 6</h3>
+              <h5>Your take on P.E.</h5>
+              <select id="question6">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Easiest class to ditch</option>
+                <option value="2">Worthless if I'm not actually burning calories</option>
+                <option value="3">It's the only class I enjoy</option>
+                <option value="4">I'd rather exercise my mind</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 7</h3>
+              <h5>My friends would describe me as</h5>
+              <select id="question7">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Accident prone</option>
+                <option value="2">Somewhat shallow</option>
+                <option value="3">Confident</option>
+                <option value="4">Boastful</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 8</h3>
+              <h5>What are you most likely to get upset by?</h5>
+              <select id="question8">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Arguing with my significant other</option>
+                <option value="2">Being Rejected by the opposite sex</option>
+                <option value="3">Being financially cut off by my parents</option>
+                <option value="4">Nothing really gets me upset</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 9</h3>
+              <h5>Favorite Color</h5>
+              <select id="question9">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Black</option>
+                <option value="2">Red</option>
+                <option value="3">Yellow</option>
+                <option value="4">Purple</option>
+              </select>
+            </div>
+
+            <div class="input-field col s12">
+              <h3>Question 10</h3>
+              <h5>Were you popular in high school?</h5>
+              <select id="question10">
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Yes, it came naturally</option>
+                <option value="2">Yes, but it was more popularity by association</option>
+                <option value="3">Yes, Queen B (in my mind)</option>
+                <option value="4">No, but I wanted to be</option>
+              </select>
+            </div>
+
+            <!-- SUBMIT-->
+            <div>
+              <button class="btn waves-effect waves-light" type="submit" name="action" id="submitButton">Submit Responses</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- MODAL DIALOG, DISPLAYS NEW BFF -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Closest Friend Match</h4>
+      <div class="divider"></div>
+      <h5 id="userMatch"></h5>
+      <img id="userMatchImage" class="materialboxed" width="650" src="">
+    </div>
+    <div class="modal-footer">
+      <a href="/survey" class="modal-action modal-close waves-effect waves-green btn-flat">Let's try again!</a>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('select').material_select();
+      $('.modal').modal({
+        dismissible: false, // CLICKING OUTSIDE BOX WILL DISMISS MODAL 
+        opacity: .5, 
+        inDuration: 300, 
+        outDuration: 200, 
+        startingTop: '4%', 
+        endingTop: '10%' 
+      });
+    });
+    // SUBMIT BUTTON
+    $('#submitButton').on('click', function(event) {
+      event.preventDefault();
+      // USER INPUT
+      var userInput = {
+        name: $('#userName').val().trim(),
+        photo: $('#userPhoto').val().trim(),
+        scores:[
+          $('#question1').val().trim(),
+          $('#question2').val().trim(),
+          $('#question3').val().trim(),
+          $('#question4').val().trim(),
+          $('#question5').val().trim(),
+          $('#question6').val().trim(),
+          $('#question7').val().trim(),
+          $('#question8').val().trim(),
+          $('#question9').val().trim(),
+          $('#question10').val().trim()
+        ]
+      };
+      // ADDS USER INPUT TO FRIENDS LIST
+      $.post('/api/friends', userInput)
+          .done(function(data) {
+            $('#userMatch').html(data.matchName);
+          $("#userMatchImage").attr("src", data.matchImage);
+            $('#modal1').modal('open');
+          });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+var friendArray = [
+{
+  "name":"Cher",
+  "photo":"https://media.giphy.com/media/26xBPncFx3h3MQd8s/giphy.gif",
+  "scores":[
+    "2",
+    "4",
+    "2",
+    "1",
+    "2",
+    "2",
+    "3",
+    "4",
+    "3",
+    "1"
+   ]
+},
+{
+  "name":"Dionne",
+  "photo":"https://media.giphy.com/media/ekjohD5koBnJC/giphy.gif",
+  "scores":[
+    "1",
+    "2",
+    "1",
+    "3",
+    "1",
+    "3",
+    "2",
+    "1",
+    "2",
+    "2"
+   ]
+},
+{
+  "name":"Tai",
+  "photo":"https://media.giphy.com/media/cvWEy3PJSchWg/giphy.gif",
+  "scores":[
+    "3",
+    "3",
+    "4",
+    "4",
+    "3",
+    "4",
+    "1",
+    "2",
+    "2",
+    "4"
+   ]
+},
+{
+  "name":"Amber",
+  "photo":"https://media.giphy.com/media/5yJxo17j5QiWs/giphy.gif",
+  "scores":[
+    "4",
+    "1",
+    "3",
+    "2",
+    "4",
+    "1",
+    "4",
+    "3",
+    "1",
+    "3"
+   ]
+},
+];
+
+
+module.exports = friendArray;
