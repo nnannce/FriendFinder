@@ -1,7 +1,7 @@
 # FriendFinder
 A compatibility-based "FriendFinder" application
 
-## HEROKU 
+## Heroku 
 https://fathomless-anchorage-82923.herokuapp.com/
 
 ## Technologies used
